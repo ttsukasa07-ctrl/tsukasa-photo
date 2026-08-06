@@ -24,3 +24,103 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}body {
+  font-family: var(--font-noto-sans-jp), sans-serif;
+}
+
+.font-english {
+  font-family: var(--font-cormorant), serif;
+}html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-noto-sans-jp), sans-serif;
+}
+
+.font-english {
+  font-family: var(--font-cormorant), serif;
+}body {
+  font-family: var(--font-noto-sans-jp), sans-serif;
+  font-size: 12px;
+  line-height: 2.2;
+  letter-spacing: 0.08em;
+  color: #171717;
+}
+
+.font-english {
+  font-family: var(--font-cormorant), serif;
+}
+
+.section-title {
+  font-family: var(--font-cormorant), serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.4;
+}
+
+.section-subtitle {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  line-height: 2;
+}
+.body-text {
+  font-size: 12px;
+  line-height: 2.4;
+  letter-spacing: 0.12em;
+}
+
+.link-title {
+  font-family: var(--font-cormorant), serif;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.brand-logo {
+  font-family: var(--font-cormorant), serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.9em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brand-subtitle {
+  font-family: var(--font-cormorant), serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1;
+}
+
+.portfolio-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
+  scroll-behavior: auto;
+}
+
+.portfolio-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio-scroll:active {
+  cursor: grabbing;
+}.hero-zoom {
+  animation: hero-zoom-out 16s ease-out forwards;
+}
+
+@keyframes hero-zoom-out {
+  from {
+    transform: scale(1.15);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
