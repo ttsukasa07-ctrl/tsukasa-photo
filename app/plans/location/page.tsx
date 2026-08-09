@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LocationPortfolioStrip from "@/components/LocationPortfolioStrip";
+
+export const metadata: Metadata = {
+  title: "Location Plan | 京都のロケーション前撮り",
+  description:
+    "京都を中心に、ロケーション前撮りやスタジオ撮影に対応。お二人らしさを大切にしたウェディングフォトプランをご提案します。",
+};
 
 export default function LocationPlanPage() {
   return (
@@ -62,40 +69,26 @@ export default function LocationPlanPage() {
 
           <div className="mt-14 divide-y divide-neutral-300 border-y border-neutral-300">
             <div className="grid gap-3 py-7 md:grid-cols-[220px_1fr]">
-              <p className="font-semibold tracking-[0.14em]">
-                料金
-              </p>
-
-              <p className="leading-[2.2] tracking-[0.1em]">
-                ¥30,000
-              </p>
+              <p className="font-semibold tracking-[0.14em]">料金</p>
+              <p className="leading-[2.2] tracking-[0.1em]">¥30,000</p>
             </div>
 
             <div className="grid gap-3 py-7 md:grid-cols-[220px_1fr]">
-              <p className="font-semibold tracking-[0.14em]">
-                撮影時間
-              </p>
-
+              <p className="font-semibold tracking-[0.14em]">撮影時間</p>
               <p className="leading-[2.2] tracking-[0.1em]">
                 1時間〜1時間半
               </p>
             </div>
 
             <div className="grid gap-3 py-7 md:grid-cols-[220px_1fr]">
-              <p className="font-semibold tracking-[0.14em]">
-                納品枚数
-              </p>
-
+              <p className="font-semibold tracking-[0.14em]">納品枚数</p>
               <p className="leading-[2.2] tracking-[0.1em]">
                 1着・1ロケーションにつき100枚以上
               </p>
             </div>
 
             <div className="grid gap-3 py-7 md:grid-cols-[220px_1fr]">
-              <p className="font-semibold tracking-[0.14em]">
-                納期
-              </p>
-
+              <p className="font-semibold tracking-[0.14em]">納期</p>
               <p className="leading-[2.2] tracking-[0.1em]">
                 約1ヶ月
               </p>
