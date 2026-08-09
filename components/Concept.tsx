@@ -8,13 +8,13 @@ export default function Concept() {
         {/* English Copy */}
         <div className="text-center">
           <div className="font-english text-[26px] font-semibold italic leading-[1.7] tracking-[0.14em] md:text-[40px] md:leading-[1.4] md:tracking-[0.20em]">
-            <p className="-translate-x-5 md:-translate-x-[90px]">
-              “We don&apos;t photograph weddings.
-            </p>
+           <p className="text-center md:-translate-x-[90px]">
+  “We don&apos;t photograph weddings.
+</p>
 
-            <p className="translate-x-5 md:translate-x-[90px]">
-              We photograph memories.”
-            </p>
+<p className="text-center md:translate-x-[90px]">
+  We photograph memories.”
+</p>
           </div>
 
           <p className="font-english mt-12 text-[18px] font-semibold italic leading-[1.9] tracking-[0.18em] md:mt-16 md:text-[22px] md:leading-[1.8] md:tracking-[0.22em]">
