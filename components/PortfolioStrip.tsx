@@ -11,9 +11,9 @@ const portfolioImages = [
   { src: "/images/portfolio/portfolio_05.jpg", orientation: "landscape" },
   { src: "/images/portfolio/portfolio_06.jpg", orientation: "portrait" },
   { src: "/images/portfolio/portfolio_07.jpg", orientation: "landscape" },
-  { src: "/images/portfolio/portfolio_08.jpg", orientation: "portrait" },
-  { src: "/images/portfolio/portfolio_09.jpg", orientation: "landscape" },
-  { src: "/images/portfolio/portfolio_10.jpg", orientation: "portrait" },
+  { src: "/images/portfolio/portfolio_08.jpg", orientation: "landscape" },
+  { src: "/images/portfolio/portfolio_09.jpg", orientation: "portrait" },
+  { src: "/images/portfolio/portfolio_10.jpg", orientation: "landscape" },
 ];
 
 export default function PortfolioStrip() {
@@ -24,6 +24,7 @@ export default function PortfolioStrip() {
 
   useEffect(() => {
     const container = scrollRef.current;
+
     if (!container) return;
 
     let animationFrameId: number;
@@ -35,6 +36,7 @@ export default function PortfolioStrip() {
 
       const loopWidth = container.scrollWidth / 2;
 
+      // 1周 約240秒
       const speed = loopWidth / 240;
 
       positionRef.current += speed * deltaTime;
@@ -57,6 +59,7 @@ export default function PortfolioStrip() {
 
   const handleScroll = () => {
     const container = scrollRef.current;
+
     if (!container) return;
 
     positionRef.current = container.scrollLeft;
@@ -83,14 +86,15 @@ export default function PortfolioStrip() {
           >
             <Image
               src={image.src}
-              alt={`Wedding portfolio ${
+              alt={`Portfolio ${
                 (index % portfolioImages.length) + 1
               }`}
               fill
-              className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+              sizes="(max-width: 768px) 300px, 390px"
+              className="object-cover md:transition-transform md:duration-700 md:ease-out md:group-hover:scale-[1.04]"
             />
 
-            <div className="pointer-events-none absolute inset-0 bg-white/0 transition-colors duration-700 group-hover:bg-white/15" />
+            <div className="pointer-events-none absolute inset-0 bg-white/0 md:transition-colors md:duration-700 md:group-hover:bg-white/15" />
           </div>
         ))}
       </div>
