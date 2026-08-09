@@ -41,6 +41,15 @@ export default function LocationPlanPage() {
       {/* Location Portfolio */}
       <LocationPortfolioStrip />
 
+<div className="mt-10 text-center md:mt-14">
+  <a
+    href="/portfolio/location"
+    className="font-english inline-block text-[18px] font-semibold tracking-[0.2em] transition-opacity duration-300 hover:opacity-50"
+  >
+    View Portfolio →
+  </a>
+</div>
+
       {/* Description */}
       <section className="px-5 pb-20 pt-10 md:px-8 md:pb-28 md:pt-14">
         <div className="mx-auto max-w-3xl text-center">
