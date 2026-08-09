@@ -5,8 +5,6 @@ export default function Footer() {
         {/* Mobile */}
         <div className="flex flex-col items-center text-center md:hidden">
           <p className="brand-logo translate-x-[8px] text-[24px]">
-  tsukasa
-</p>
             tsukasa
           </p>
 
