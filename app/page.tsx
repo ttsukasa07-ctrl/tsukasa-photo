@@ -23,7 +23,7 @@ export default function Home() {
     priority
   />
 
-  <div className="absolute left-[7%] top-[27%] z-10 md:left-[9%] md:top-[26%]">
+  <div className="absolute left-[5%] top-[10%] z-10 md:left-[9%] md:top-[26%]">
     <p className="font-english text-[22px] font-semibold italic leading-[2.05] tracking-[0.38em] text-white/95 drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)] md:text-[26px] md:tracking-[0.48em]">
       For the moments
       <br />
