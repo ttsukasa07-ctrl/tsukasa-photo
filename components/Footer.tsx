@@ -4,7 +4,9 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl">
         {/* Mobile */}
         <div className="flex flex-col items-center text-center md:hidden">
-          <p className="brand-logo text-[24px]">
+          <p className="brand-logo translate-x-[8px] text-[24px]">
+  tsukasa
+</p>
             tsukasa
           </p>
 
