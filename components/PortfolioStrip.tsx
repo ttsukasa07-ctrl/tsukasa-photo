@@ -38,7 +38,7 @@ export default function PortfolioStrip() {
       previousTime = currentTime;
 
       const loopWidth = track.scrollWidth / 2;
-      const speed = loopWidth / 240;
+      const speed = loopWidth / 150;
 
       mobilePositionRef.current += speed * deltaTime;
 
